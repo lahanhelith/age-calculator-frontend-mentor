@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div id="field-form">
+      <form id="form" action="/" method="GET">
+        <div id="input-wrapper" class="grid-input">
+          <div class="input-container">
+            <label id="day-label" for="day-input">DAY</label>
+            <input id="day-input" type="number" class="input" placeholder="DD" >
+            <span id="day-error" class="error-message"></span>
+          </div>
+          <div class="input-container">
+            <label id="month-label" for="month-input">MONTH</label>
+            <input id="month-input" type="number" class="input" placeholder="MM" >
+            <span id="month-error" class="error-message"></span>
+          </div>
+          <div class="input-container">
+            <label id="year-label" for="year-input">YEAR</label>
+            <input id="year-input" type="number" class="input" placeholder="YYYY" >
+            <span id="year-error" class="error-message"></span>
+          </div>
+          <div id="line"></div>
+          <button type="submit" id="submit-btn"><img src="./assets/images/icon-arrow.svg"></button>
+        </div>
+      </div>
+    </form>
+    <div id="age-container">
+      <span class="age-span"><span class="age" id="years">--</span> years</span>
+      <span class="age-span"><span class="age" id="months">--</span> months</span>
+      <span class="age-span"><span class="age" id="days">--</span> days</span>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
